@@ -32,7 +32,7 @@ jobs:
     - name: Run SonarCloud Scan for Go
       uses: sonarsource/sonarcloud-github-action@master
       env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_BACKEND }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       with:
         args: >
           -Dsonar.organization=mikolaj-sujka
